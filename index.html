@@ -31,12 +31,12 @@
   <script id="theme" type="text/x-handlebars-template">
             
                     {{{ title }}}  
-      <div id="suck">
+      
     {{#region "columnizer" id="rotkSlider" max_auto_assets="0" max_cols="1" dummy_content="I-1|I-1|I-1|I-1"}}
     
         <img id="rotkSliderNext" src="img/next-big.png"/>
         <img id="rotkSliderPrev" src="img/prev-big.png"/>
-        
+        <div class="loadi"></div>
         
         {{#asset "imagegroup" size="1"}}
             <div class="content">
@@ -92,7 +92,7 @@
        
         
     {{/region}}
-    </div>
+    
     
     {{#region "columnizer" id="main-contentz" max_auto_assets="0" max_cols="4" dummy_content="I-1,I-1,I-1,I-1"}}
         
@@ -101,7 +101,7 @@
         
             <div class="content">
                 {{#images}}
-                    <img src="{{{resize original_url width="190" height="200"}}}" alt="{{title}}" />
+                    <img src="{{{resize original_url width="190" height="0"}}}" alt="{{title}}" />
                 {{/images}}
             </div>
             
@@ -114,7 +114,7 @@
         
             <div class="content">
                 {{#images}}
-                    <img src="{{{resize original_url width="190" height="200"}}}" alt="{{title}}" />
+                    <img src="{{{resize original_url width="190" height="0"}}}" alt="{{title}}" />
                 {{/images}}
             </div>
             
@@ -127,7 +127,7 @@
         
             <div class="content">
                 {{#images}}
-                    <img src="{{{resize original_url width="190" height="200"}}}" alt="{{title}}" />
+                    <img src="{{{resize original_url width="190" height="0"}}}" alt="{{title}}" />
                 {{/images}}
             </div>
             
@@ -140,7 +140,7 @@
         
             <div class="content">
                 {{#images}}
-                    <img src="{{{resize original_url width="190" height="200"}}}" alt="{{title}}" />
+                    <img src="{{{resize original_url width="190" height="0"}}}" alt="{{title}}" />
                 {{/images}}
             </div>
             
@@ -151,112 +151,7 @@
        
     {{/region}}
                  
-    <div class="whatTheFuck">
-        <div id="slider-t">
-            <ul>
-                <li>
-                    
-                    {{#region "columnizer" id="main-contentzz2" max_auto_assets="0" max_cols="3" dummy_content="I-1,I-1,I-1"}}
-
-
-                    {{#asset "imagegroup" size="3"}}
-
-                        <div class="content">
-                            {{#images}}
-                                <img src="{{{resize original_url width="190" height="200"}}}" alt="{{title}}" />
-                            {{/images}}
-                        </div>
-
-                        {{{title}}}
-                        {{{description}}}
-
-                   {{/asset}}
-
-                   {{#asset "imagegroup" size="3"}}
-
-                        <div class="content">
-                            {{#images}}
-                                <img src="{{{resize original_url width="190" height="200"}}}" alt="{{title}}" />
-                            {{/images}}
-                        </div>
-
-                        {{{title}}}
-                        {{{description}}}
-
-                   {{/asset}}
-
-                   {{#asset "imagegroup" size="3"}}
-
-                        <div class="content">
-                            {{#images}}
-                                <img src="{{{resize original_url width="190" height="200"}}}" alt="{{title}}" />
-                            {{/images}}
-                        </div>
-
-                        {{{title}}}
-                        {{{description}}}
-
-                   {{/asset}}
-                   
-                   
-                   
-
-                {{/region}}
-                                </li>
-                            <li>{{#region "columnizer" id="main-contentzz3" max_auto_assets="0" max_cols="3" dummy_content="I-1,I-1,I-1"}}
-
-
-                    {{#asset "imagegroup" size="3"}}
-
-                        <div class="content">
-                            {{#images}}
-                                <img src="{{{resize original_url width="190" height="200"}}}" alt="{{title}}" />
-                            {{/images}}
-                        </div>
-
-                        {{{title}}}
-                        {{{description}}}
-
-                   {{/asset}}
-
-                   {{#asset "imagegroup" size="3"}}
-
-                        <div class="content">
-                            {{#images}}
-                                <img src="{{{resize original_url width="190" height="200"}}}" alt="{{title}}" />
-                            {{/images}}
-                        </div>
-
-                        {{{title}}}
-                        {{{description}}}
-
-                   {{/asset}}
-
-                   {{#asset "imagegroup" size="3"}}
-
-                        <div class="content">
-                            {{#images}}
-                                <img src="{{{resize original_url width="190" height="200"}}}" alt="{{title}}" />
-                            {{/images}}
-                        </div>
-
-                        {{{title}}}
-                        {{{description}}}
-
-                   {{/asset}}
-                   
-                   
-                   
-
-                {{/region}}
-                                </li>
-                                
     
-
-                        </ul>
-                        
-                    </div>
-     </div>
      
      {{#region "columnizer" id="aboveFooter" max_auto_assets="0" max_cols="4" dummy_content="T-4,T-4,T-4,T-4"}}
     
