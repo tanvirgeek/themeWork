@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+
+  <!-- Name of yur theme -->
+  <title>Rotk Theme</title>
+
+<!--
+  <palette class="palette-default" name="Default" preview="#ffffff,#222222">
+-->
+
+  <!-- Add any styles your theme requires here -->
+  <link rel="stylesheet/less" type="text/css" href="styles/main.less">
+  
+  <!-- This script loads the Populr theming engine. Populr will automatically remove it at runtime. -->
+  
+  <script src="http://populr.me/assets/developers/themer.js"></script>
+  
+  <!-- Add any javscript your theme requires here -->
+  
+  <script type="text/javascript" src="js/easySlider1.7.js"></script>
+  
+  <script src="js/main.js"></script>
+
+ </head> 
+ <body>
+  <!-- Put your theme's HTML inside this script tag. The script tag will 
+       prevent issues with quote escaping and invalid markup. -->
+  
+  <script id="theme" type="text/x-handlebars-template">
+            
+                    {{{ title }}}  
+      <div id="suck">
+    {{#region "columnizer" id="rotkSlider" max_auto_assets="0" max_cols="1" dummy_content="I-1|I-1|I-1|I-1"}}
+    
+        <img id="rotkSliderNext" src="img/next-big.png"/>
+        <img id="rotkSliderPrev" src="img/prev-big.png"/>
+        <div class="loadi"></div>
+        
+        {{#asset "imagegroup" size="1"}}
+            <div class="content">
+                {{#images}}
+                    <img src="{{{resize original_url width="190" height="0"}}}" alt="{{title}}" />
+                {{/images}}
+            </div>
+            <div class="coolText">
+                {{{title}}}
+                {{{title}}
+            </div>
+       {{/asset}}
+       
+       
+       {{#asset "imagegroup" size="1"}}
+            <div class="content">
+                {{#images}}
+                    <img src="{{{resize original_url width="190" height="0"}}}" alt="{{title}}" />
+                {{/images}}
+            </div>
+            <div class="coolText">
+                {{{title}}}
+                {{{title}}
+            </div>
+       {{/asset}}
+       
+       
+       {{#asset "imagegroup" size="1"}}
+            <div class="content">
+                {{#images}}
+                    <img src="{{{resize original_url width="190" height="0"}}}" alt="{{title}}" />
+                {{/images}}
+            </div>
+            
+            <div class="coolText">
+                {{{title}}}
+                {{{title}}
+            </div>
+       {{/asset}}
+       
+       
+       {{#asset "imagegroup" size="1"}}
+            <div class="content">
+                {{#images}}
+                    <img src="{{{resize original_url width="190" height="0"}}}" alt="{{title}}" />
+                {{/images}}
+            </div>
+            <div class="coolText">
+                {{{title}}}
+                {{{title}}
+            </div>
+       {{/asset}}
+       
+        
+    {{/region}}
+    </div>
+    
+    {{#region "columnizer" id="main-contentz" max_auto_assets="0" max_cols="4" dummy_content="I-1,I-1,I-1,I-1"}}
+        
+        
+        {{#asset "imagegroup" size="4"}}
+        
+            <div class="content">
+                {{#images}}
+                    <img src="{{{resize original_url width="190" height="200"}}}" alt="{{title}}" />
+                {{/images}}
+            </div>
+            
+            {{{title}}}
+            {{{description}}}
+        
+       {{/asset}}
+       
+       {{#asset "imagegroup" size="4"}}
+        
+            <div class="content">
+                {{#images}}
+                    <img src="{{{resize original_url width="190" height="200"}}}" alt="{{title}}" />
+                {{/images}}
+            </div>
+            
+            {{{title}}}
+            {{{description}}}
+        
+       {{/asset}}
+       
+       {{#asset "imagegroup" size="4"}}
+        
+            <div class="content">
+                {{#images}}
+                    <img src="{{{resize original_url width="190" height="200"}}}" alt="{{title}}" />
+                {{/images}}
+            </div>
+            
+            {{{title}}}
+            {{{description}}}
+        
+       {{/asset}}
+       
+       {{#asset "imagegroup" size="4"}}
+        
+            <div class="content">
+                {{#images}}
+                    <img src="{{{resize original_url width="190" height="200"}}}" alt="{{title}}" />
+                {{/images}}
+            </div>
+            
+            {{{title}}}
+            {{{description}}}
+        
+       {{/asset}}
+       
+    {{/region}}
+                 
+    <div class="whatTheFuck">
+        <div id="slider-t">
+            <ul>
+                <li>
+                    
+                    {{#region "columnizer" id="main-contentzz2" max_auto_assets="0" max_cols="3" dummy_content="I-1,I-1,I-1"}}
+
+
+                    {{#asset "imagegroup" size="3"}}
+
+                        <div class="content">
+                            {{#images}}
+                                <img src="{{{resize original_url width="190" height="200"}}}" alt="{{title}}" />
+                            {{/images}}
+                        </div>
+
+                        {{{title}}}
+                        {{{description}}}
+
+                   {{/asset}}
+
+                   {{#asset "imagegroup" size="3"}}
+
+                        <div class="content">
+                            {{#images}}
+                                <img src="{{{resize original_url width="190" height="200"}}}" alt="{{title}}" />
+                            {{/images}}
+                        </div>
+
+                        {{{title}}}
+                        {{{description}}}
+
+                   {{/asset}}
+
+                   {{#asset "imagegroup" size="3"}}
+
+                        <div class="content">
+                            {{#images}}
+                                <img src="{{{resize original_url width="190" height="200"}}}" alt="{{title}}" />
+                            {{/images}}
+                        </div>
+
+                        {{{title}}}
+                        {{{description}}}
+
+                   {{/asset}}
+                   
+                   
+                   
+
+                {{/region}}
+                                </li>
+                            <li>{{#region "columnizer" id="main-contentzz3" max_auto_assets="0" max_cols="3" dummy_content="I-1,I-1,I-1"}}
+
+
+                    {{#asset "imagegroup" size="3"}}
+
+                        <div class="content">
+                            {{#images}}
+                                <img src="{{{resize original_url width="190" height="200"}}}" alt="{{title}}" />
+                            {{/images}}
+                        </div>
+
+                        {{{title}}}
+                        {{{description}}}
+
+                   {{/asset}}
+
+                   {{#asset "imagegroup" size="3"}}
+
+                        <div class="content">
+                            {{#images}}
+                                <img src="{{{resize original_url width="190" height="200"}}}" alt="{{title}}" />
+                            {{/images}}
+                        </div>
+
+                        {{{title}}}
+                        {{{description}}}
+
+                   {{/asset}}
+
+                   {{#asset "imagegroup" size="3"}}
+
+                        <div class="content">
+                            {{#images}}
+                                <img src="{{{resize original_url width="190" height="200"}}}" alt="{{title}}" />
+                            {{/images}}
+                        </div>
+
+                        {{{title}}}
+                        {{{description}}}
+
+                   {{/asset}}
+                   
+                   
+                   
+
+                {{/region}}
+                                </li>
+                                
+    
+
+                        </ul>
+                        
+                    </div>
+     </div>
+     
+     {{#region "columnizer" id="aboveFooter" max_auto_assets="0" max_cols="4" dummy_content="T-4,T-4,T-4,T-4"}}
+    
+    
+            {{#asset "text" size="4"}}
+                {{{title}}}
+                <div class="content">
+                    {{{body}}}
+                </div>
+            {{/asset}}
+            
+            {{#asset "text" size="4"}}
+                {{{title}}}
+                <div class="content">
+                    {{{body}}}
+                </div>
+            {{/asset}}
+            
+            {{#asset "text" size="4"}}
+                {{{title}}}
+                <div class="content">
+                    {{{body}}}
+                </div>
+            {{/asset}}
+            
+            {{#asset "text" size="4"}}
+                {{{title}}}
+                <div class="content">
+                    {{{body}}}
+                </div>
+            {{/asset}}
+    
+    {{/region}}
+        
+    
+    {{#region "columnizer" id="footer" max_auto_assets="0" max_cols="1" dummy_content="T-4"}}
+    
+    
+            {{#asset "text" size="1"}}
+                {{{title}}}
+                <div class="content">
+                    {{{body}}}
+                </div>
+            {{/asset}}
+    
+    
+    {{/region}}
+</script>
+
+<script src="js/jquery-2.0.0.min.js"></script>
+<script src="js/skrollr.js"></script>
+<script src="js/slider.js"></script>
+<script src="js/jquery.nanoscroller.min.js"></script>
+<script type="text/javascript">
+
+
+$.noConflict();
+
+  var t= window.setInterval(function(){
+    window.clearInterval(t);
+    $("#slider-t").easySlider({
+                auto: false, 
+                continuous:false,
+                nextText: '',
+                prevText: ''
+            });
+    ( function($) {
+    // we can now rely on $ within the safety of our “bodyguard” function
+    $(document).ready( function() { 
+             
+             
+              } );
+} ) ( jQuery );         
+},3000);
+
+
+</script>
+
+</body>
+</html>

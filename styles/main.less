@@ -1,0 +1,377 @@
+@import 'http://populr.me/assets/developers/populr_mixins.less';
+@import 'variables';
+@import 'preboot';
+
+#reset > .global-reset();
+
+/* TYPOGRAPHY DEFAULTS */
+
+@text-color: #111;
+@link-color: @accent-color;
+
+// Title text defaults
+// @headline-font-family is defined in variables.less
+@headline-font-size: 24px;
+@headline-line-height: 1.2;
+
+.headline-font() {
+  font-family: @headline-font-family;
+  font-size: @headline-font-size;
+  line-height: @headline-line-height;
+}
+
+.asset-title { .headline-font(); }
+
+// Body text defaults
+@body-font-family: Arial, sans-serif;
+@body-font-size: 14px;
+@body-line-height: 1.5;
+
+.body-font() {
+  font-family: @body-font-family;
+  font-size: @body-font-size;
+  line-height: @body-line-height;
+}
+
+// .description, .description p, .description li, .content, .content p, .content li, .body, .body p, .body li {
+.description, .content, .body, p, li {
+  .body-font();
+}
+
+/* END TYPOGRAPHY */
+
+
+/* STRUCTURE */
+
+html{
+    margin:0;
+}
+#suck{
+    margin:0px;
+    overflow: auto;
+}
+
+#pop {
+  margin: 0 auto;
+  color: @text-color;
+  background-color:#F5F5F5;
+  i, em { font-style: italic; }
+  b, strong { font-weight: 700; }
+  a {
+    color: @link-color;
+    text-decoration: none;
+    &:hover { text-decoration: underline; }
+    &:active { color: lighten(@link-color, 20%); }
+  }
+}
+
+// Content wrapper
+#main-content { margin: 0 auto; }
+
+// Pop title
+#pop-title {
+  width: 100%;
+  .headline-font();
+  font-size: 45px;
+  line-height: 1.5;
+  text-align: center;
+  background-color:#FFFFFF;
+  colo:#010101;
+  padding:10px 0px;
+  position:fixed;
+  top:0px;
+  z-index:1000;
+}
+
+//slider div
+#rotkSlider{
+    position:relative;
+    height:650px;
+    top:91px;
+    overflow:hidden;
+    z-index:100;
+}
+#rotkSlider .columnizer-row {
+    position: absolute;
+    top:0px;
+    left:0px;
+    margin:0px;
+    padding:0px;
+    opacity:0;
+    z-index:-10;
+    width:100%;
+    height:650px;
+}
+
+#rotkSlider .columnizer-row img{
+    width:100%;
+    margin:0px;
+    padding:0px;
+    height:650px;
+}
+
+.active{
+    opacity:1;
+    z-index:10;
+}
+
+.coolText{
+    position: absolute;
+    width:400px;
+    bottom:100px;
+    left:200px;
+    font-size: 21px;
+    opacity:0;
+    h2{
+        margin-bottom:50px;
+        height:50px;
+    }
+}
+
+
+.coolSpan{
+    background-color: black;
+    opacity:.8;
+    color:rgb(245,245,245);
+    padding:25px;
+}
+#rotkSliderNext{
+    position:absolute;
+    top:300px;
+    width:50;
+    height:54;
+    right:0px;
+    opacity: .8;
+    z-index: 200;
+        width:50;
+        height:54;
+   box-shadow: -2px 2px 4px black;
+    
+}
+#rotkSliderPrev{
+    position:absolute;
+    top:300px;
+    left:0px;
+    opacity:.8;
+    z-index: 200;
+    box-shadow: 2px 2px 4px black;
+        width:50;
+        height:54;
+    
+}
+
+.loadi{
+    background: black url("@{base-url}/img/ajax-loader.gif") no-repeat center;
+    height:100%;
+    position:absolute;
+    top:0px;
+    left:0px;
+    z-index:300;
+    width:100%;
+    
+}
+#slider-t ul{
+    display:block;
+    position:relative;
+}
+
+#slider-t ul, #slider-t li{
+	margin:0;
+	padding:0;
+	list-style:none;
+        overflow:hidden;
+	}
+#slider-t, #slider-t li{ 
+	
+	overflow:hidden; 
+	}
+
+#slider-t {
+        width:960px;
+        margin:0 auto;
+        text-align:center;
+}
+.whatTheFuck{
+    position: relative;
+    width:960px;
+    margin:auto;
+    overflow:hidden:
+    clear:both;
+}
+#slider-t{
+    position: relative!important;
+    top:91px;
+}
+#nextBtn,#prevBtn{
+    position:absolute;
+    display:block;
+    width:80px;
+    height:80px;
+    right:0px;
+    top:75px;
+}
+#nextBtn{
+    right:00px;
+}
+#prevBtn a{
+    display:block;
+    width:80px;
+    height:80px;
+    background:url('@{base-url}/img/prev-small.png') no-repeat;
+}
+
+#nextBtn a {
+    display:block;
+    width:80px;
+    height:80px;
+    background:url('@{base-url}/img/next-small.png') no-repeat top left;
+}
+
+#main-contentz{
+    position:relative;
+    top:91px;
+    padding:20px 0;
+}
+
+#main-contentzz{
+    position:relative;
+    
+   
+}
+
+#aboveFooter{
+    position:relative;
+    width:100%;
+    background-color:#2D3032;
+    position:relative;
+    margin:0px;
+    color:#8C8D8E;
+    top:115px;
+    padding:30px 0px;
+}
+#footer{
+    position:relative;
+    width:100%;
+    background-color:#1F1F1F;
+    position:relative;
+    margin:0px;
+    color:#777777;
+    top:91px;
+    padding:15px 0px;
+    font-size:16px;
+    h2{
+        font-size:22px;
+    }
+}
+
+// Columnizer rows & columns
+.columnizer-row {
+  width: 960px;
+  margin:0px auto;
+  
+}
+
+// Assets
+.asset-title { margin: 10px 0; }
+
+.description, .body {
+  margin: 10px 0;
+  ul, ol {
+    margin: .5em 0;
+    list-style-position: inside;
+  }
+  ul li { list-style-type: disc; }
+  ol li { list-style-type: decimal; }
+}
+
+.content { margin: 10px 0; }
+
+// Text assets
+.asset-type-text.asset-size-1, .asset-type-documentgroup.asset-size-1 {
+  .asset-title {
+    font-size: 36px;
+    text-align: center;
+  }
+  .description, .body, p, li {
+    font-size: 18px;
+    text-align: center;
+  }
+}
+
+// Image assets
+
+
+#populr > #image-slider-themes > .basic();
+
+// Video assets
+.asset-type-videogroup .video-js { margin-bottom: 15px; }
+.asset-type-videogroup .playlist {
+  position: absolute;
+  padding: 0;
+  top: 10px;
+  right: 10px;
+  list-style: none;
+  li a img {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border: 1px solid #777;
+  }
+}
+.asset-type-videogroup video { display: block; }
+.asset-type-videogroup .mejs-container video { margin-left: 0; }
+
+.documents {
+  margin: 10px auto;
+  li { margin-bottom: .5em; }
+}
+
+// Clearfix
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
+///////////////////////////////////////////////////////
+/* MOBILE
+The Populr mobile reset will handle some of the basics of 
+mobilizing your theme, such as stacking all of the assets 
+vertically. However, you'll have to fine tune the styling 
+to make your theme look really good on mobile devices. */
+@media all and (max-width: 960px) {
+  #populr > .mobile-reset();
+
+  #pop-title {
+    width: auto !important;
+    padding: 20px !important;
+  }
+
+  .columnizer-row {
+    width: auto !important;
+    margin: 20px auto !important;
+    padding: 0 20px !important;
+  }
+
+  .asset-title {
+    font-size: 24px !important;
+    text-align: left !important;
+  }
+
+  .description, .body, p, li {
+    font-size: 14px !important;
+    text-align: left !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #pop-title { font-size: 32px !important; }
+
+  .asset-title { font-size: 20px !important; }
+}
+
